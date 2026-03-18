@@ -2,11 +2,15 @@
 This is the code for the paper ["Mediocrity is the key for LLM as a Judge Anchor Selection"](https://arxiv.org/abs/2603.16848)
 
 ## Paper Abstract 
-The ``LLM-as-a-judge'' paradigm has become a standard method for evaluating open-ended generation. To address the quadratic scalability costs of pairwise comparisons, popular benchmarks like Arena-Hard and AlpacaEval compare all models against a single anchor. However, despite its widespread use, the impact of anchor selection on the reliability of the results remains largely unexplored. In this work, we systematically investigate the effect of anchor selection by evaluating 22 different anchors on the Arena-Hard-v2.0 dataset. We find that the choice of anchor is critical: a poor anchor can dramatically reduce correlation with human rankings. 
-We identify that common anchor choices (best-performing and worst-performing models) make poor anchors. Because these extreme anchors are consistently better or worse than all other models, they are seldom indicative of the relative ranking of the models. 
-We further quantify the effect size of anchor selection, showing it is comparable to the selection of a judge model.
-We conclude with actionable recommendations. First, we conduct a power analysis, and compute sufficient benchmark sizes for anchor-based evaluation, finding that standard benchmark sizes are insufficient for pairwise evaluation  and fail to distinguish between competitive models reliably.
-Second, we provide guidelines for selecting informative anchors to ensure reliable and efficient evaluation practices.
+> The "LLM-as-a-judge" paradigm has become a standard method for evaluating open-ended generation. To address the quadratic scalability costs of pairwise comparisons, popular benchmarks like Arena-Hard and AlpacaEval compare all models against a single anchor. However, despite its widespread use, the impact of anchor selection on the reliability of the results remains largely unexplored. In this work, we systematically investigate the effect of anchor selection by evaluating 22 different anchors on the Arena-Hard-v2.0 dataset. We find that the choice of anchor is critical: a poor anchor can dramatically reduce correlation with human rankings. We identify that common anchor choices (best-performing and worst-performing models) make poor anchors. Because these extreme anchors are consistently better or worse than all other models, they are seldom indicative of the relative ranking of the models. We further quantify the effect size of anchor selection, showing it is comparable to the selection of a judge model. We conclude with actionable recommendations. First, we conduct a power analysis, and compute sufficient benchmark sizes for anchor-based evaluation, finding that standard benchmark sizes are insufficient for pairwise evaluation and fail to distinguish between competitive models reliably. Second, we provide guidelines for selecting informative anchors to ensure reliable and efficient evaluation practices.
+
+## 📊 Judgements Dataset
+
+The judgements data from our paper experiments (900K+ evaluations) is available on HuggingFace:
+
+🤗 **[ibm-research/900K-Judgements](https://huggingface.co/datasets/ibm-research/900K-Judgements)**
+
+This dataset contains all pairwise judgements we collected across multiple judge models and benchmarks for the paper's analysis.
 
 ## 🎯 Overview
 
@@ -18,6 +22,7 @@ Second, we provide guidelines for selecting informative anchors to ensure reliab
 
 ## 📋 Table of Contents
 
+- [Judgements Dataset](#judgements-dataset)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Core Scripts](#core-scripts)
