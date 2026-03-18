@@ -222,7 +222,7 @@ If you use this framework in your research, please cite:
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2603.16848}, 
 }
-'''
+```
 
 ## 📄 License
 
