@@ -6,5 +6,3 @@ Contains:
 - data_io: Data input/output utilities
 - bradley_terry: Bradley-Terry model implementation
 """
-
-# Made with Bob

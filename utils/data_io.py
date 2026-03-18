@@ -274,5 +274,3 @@ def read_arena_human_pref_140():
     for model in models:
         print(model)
     return ds
-
-# Made with Bob
