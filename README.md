@@ -124,7 +124,7 @@ python merge_eval_files.py --input_dir ./eval_directory
 
 ### `async_run_judges.py`
 
-Main script for generating pairwise model evaluations.
+Script for generating pairwise model evaluations.
 
 **Key Features:**
 - Asynchronous batch processing for efficiency
@@ -172,7 +172,7 @@ python async_run_judges.py \
 
 ### `correlations_exp.py`
 
-Comprehensive analysis toolkit for evaluation results.
+Main script for comprehensive analysis for evaluation results.
 
 **Features:**
 - Kendall's Tau correlation with human preferences
@@ -181,20 +181,6 @@ Comprehensive analysis toolkit for evaluation results.
 - Anchor-based ranking analysis
 - Statistical significance testing
 
-
-### `lmarena_stats.py`
-
-Analyze LMSYS Arena human preference data.
-
-**Features:**
-- Load Arena human preference datasets (100k, 140k)
-- Compute correlations with human rankings
-- Visualize rank vs correlation plots
-
-**Example:**
-```bash
-python lmarena_stats.py
-```
 
 ## 📊 Data Formats
 
@@ -221,6 +207,7 @@ python lmarena_stats.py
 
 If you use this framework in your research, please cite:
 
+```
 @misc{donyehiya2026mediocritykeyllmjudge,
       title={Mediocrity is the key for LLM as a Judge Anchor Selection}, 
       author={Shachar Don-Yehiya and Asaf Yehudai and Leshem Choshen and Omri Abend},
@@ -230,6 +217,7 @@ If you use this framework in your research, please cite:
       primaryClass={cs.CL},
       url={https://arxiv.org/abs/2603.16848}, 
 }
+'''
 
 ## 📄 License
 
